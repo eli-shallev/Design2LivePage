@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="main-layout">
+    <div class="modal-container full">
+        <article class="modal-content">
+            <h2 class="modal-text">Join us to get access to the latest stories!</h2>
+            <label for="email">Enter E-mail</label>
+            <input class="modal-input" id="email" type="email" placeholder="Enter Your E-Mail">
+            <button class="modal-btn" onclick="toggleModal()">Submit & Close</button>
+        </article>
+    </div>
+    <div class="main-screen full" onclick="toggleMenu()"></div>
+
+    <header class="main-header main-layout full ">
+        <section class="header-content flex align-center space-between">
+            <div class="logo">Blogin<span>.</span></div>
+            <nav class="main-nav">
+                <ul class="flex align-center clean-list">
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle-btn" onclick="toggleMenu()">☰</button>
+        </section>
+    </header>
+
+    <main class="main-content card-layout flex column">
+
+        <div class="card flex">
+            <img src="img/01.jpg" alt="" class="card-image">
+            <div class="card-content flex column space-between">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <div class="card-text-container">
+                    <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="card-text">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                </div>
+                <button class="card-btn" onclick="toggleModal()">Continue Reading <img class="arrow" src="img/green-arrow.png" alt=""></button>
+            </div>
+        </div>
+
+        <div class="card flex">
+            <img src="img/02.jpg" alt="" class="card-image">
+            <div class="card-content flex column space-between">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                    <div class="card-text-container">
+                        <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip
+                            ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p class="card-text">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur...
+                        </p>
+                    </div>
+                    <button class="card-btn" onclick="toggleModal()">Continue Reading <img class="arrow" src="img/green-arrow.png" alt=""></button>
+            </div>
+        </div>
+
+        <div class="card flex">
+            <img src="img/03.jpg" alt="" class="card-image">
+            <div class="card-content flex column space-between">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                    <div class="card-text-container">
+                        <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip
+                            ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p class="card-text">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur...
+                        </p>
+                    </div>
+                <button class="card-btn" onclick="toggleModal()">Continue Reading <img class="arrow" src="img/green-arrow.png" alt=""></button>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <ul class="flex space-between clean-list">
+            <li><a href="#"><span style="letter-spacing: -0.3em;">&#60—</span> Previous</a></li>
+            <li><a href="#">Next <span style="letter-spacing: -0.3em;">—&#62</span> </a></li>
+        </ul>
+
+    </main>
+
+    <footer class="main-footer full">
+
+        <div class="footer-container flex column space-between align-center">
+
+            <div class="logo">Blogin<span>.</span></div>
+
+            <small class="small">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <a href="#">Pixelhint.com</a></small>
+
+            <ul class="social-links clean-list flex space-between">
+
+                <li>
+                    <div class="social-logo-container facebook">
+                        <img class="social-logo" src="img/facebook-logo.png" alt="">
+                    </div>
+                </li>
+
+                <li>
+                    <div class="social-logo-container twitter">
+                        <img class="social-logo" src="img/twitter-logo.png" alt="">
+                    </div>
+                </li>
+
+                <li>
+                    <div class="social-logo-container be">
+                        <img class="social-logo" src="img/be-logo.png" alt="">
+                    </div>
+                </li>
+
+                <li>
+                    <div class="social-logo-container ball">
+                        <img class="social-logo" src="img/ball-logo.png" alt="">
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open')
+        }
+
+        function toggleModal(){
+            document.body.classList.toggle('modal-open')
+        }
+    </script>
+
+</body>
+
+</html>
